@@ -1,0 +1,6 @@
+/mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/emailService/src/main/java/com/kaankaplan/emailService/business/abstracts/EmailService.java
+/mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/emailService/src/main/java/com/kaankaplan/emailService/dto/EmailMessageKafkaDto.java
+/mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/emailService/src/main/java/com/kaankaplan/emailService/kafka/KafkaConsumer.java
+/mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/emailService/src/main/java/com/kaankaplan/emailService/config/FreeMarkerEmailTemplateConfig.java
+/mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/emailService/src/main/java/com/kaankaplan/emailService/business/concretes/EmailServiceImpl.java
+/mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/emailService/src/main/java/com/kaankaplan/emailService/EmailServiceApplication.java
