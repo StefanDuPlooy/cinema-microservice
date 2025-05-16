@@ -20,3 +20,4 @@
 /mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/userService/src/main/java/com/kaankaplan/userService/entity/dto/UserRegisterRequestDto.java
 /mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/userService/src/main/java/com/kaankaplan/userService/core/security/config/PasswordConfig.java
 /mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/userService/src/main/java/com/kaankaplan/userService/core/security/JwtProviderServiceImpl.java
+/mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/userService/src/main/java/com/kaankaplan/userService/config/MongoDbSeedConfig.java

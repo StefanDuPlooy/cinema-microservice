@@ -1,5 +1,5 @@
-# CineVision Project's Frontend React App
-This React project is the frontend codes of CineVisionMicroservice project.
+# Secure Cinema Project's Frontend React App
+This React project is the frontend codes of Secure Cinema Microservice project.
 The frontend codes for this project are written with JavaScript and React.
 In this app, user can list movies in theaters. They can view movie details,
 read reviews and write reviews about movies. They can choose city, cinema saloon and

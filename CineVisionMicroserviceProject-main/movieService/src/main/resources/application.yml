@@ -10,14 +10,20 @@ spring:
     url: jdbc:postgresql://localhost:5432/cine_vision
     password: '12345'
     driver-class-name: org.postgresql.Driver
+    initialization-mode: always
+  sql:
+    init:
+      mode: always
+      platform: postgresql
   jpa:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: 'true'
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
     show-sql: 'true'
+    defer-datasource-initialization: true
   # Apache Kafka Producer Properties
   kafka:
     producer:

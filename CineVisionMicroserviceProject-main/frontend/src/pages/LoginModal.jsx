@@ -61,10 +61,10 @@ export default function LoginModal() {
                                     <KaanKaplanTextInput id="password" type="password" name="password" class="form-control" placeholder="Password" required />
                                     <label for="floatingPassword">Password</label>
                                 </div>
-                                <p className='ps-2 text-start'>
-                                    Don't have a CineVision membership?
-                                    <a href='!#' style={{color:"black"}}
-                                        data-bs-toggle="modal" data-bs-target="#registerModal"> Register Now </a>
+                                <p className='ps-2 text-start' style={{color: "#000000"}}>
+                                    Don't have a Secure Cinema membership?
+                                    <a href='!#' style={{color:"var(--bs-secondary)", fontWeight: "600", marginLeft: "5px"}}
+                                        data-bs-toggle="modal" data-bs-target="#registerModal">Register Now</a>
                                 </p>
                             </div>
                             <div class="modal-footer">

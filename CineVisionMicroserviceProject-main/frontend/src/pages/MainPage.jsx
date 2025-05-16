@@ -42,12 +42,12 @@ export default function MainPage() {
             <header class="masthead text-center text-white">
                 <div class="masthead-content">
                     <div class="container px-5">
-                        <h1 class="masthead-heading mb-0">CineVision</h1>
+                        <h1 class="masthead-heading mb-0">Secure Cinema</h1>
                         <h2 class="masthead-subheading mb-0">
-                            Don't Miss the Joy of Movies with CineVision
+                            Don't Miss the Joy of Movies with Secure Cinema
                         </h2>
                         <h2 class="mt-3">
-                            The newest movies in theaters at CineVision Cinema
+                            The newest movies in theaters at Secure Cinema
                         </h2>
                         <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Movies</a>
                     </div>

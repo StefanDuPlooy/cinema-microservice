@@ -31,7 +31,7 @@ export default function Navbar() {
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
             <div class="container px-5">
             <Link to={"/"} style={{textDecoration:"none"}}>
-                <a class="navbar-brand"> CineVision </a>
+                <a class="navbar-brand"> Secure Cinema </a>
             </Link> 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">

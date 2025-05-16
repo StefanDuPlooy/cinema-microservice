@@ -97,7 +97,7 @@ export default function BuyTicketPage() {
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                                 <div className='row pt-3 pb-1 px-4 align-items-center'>
-                                        <div className='col-sm-6 text-start'>
+                                        <div className='col-sm-6 text-start text-dark'>
                                             <h3>Select Your Ticket</h3>
                                         </div>
                                             {/* Ticket Type Section */}
@@ -133,17 +133,17 @@ export default function BuyTicketPage() {
                                     <div class="accordion-body">
                                         <section>
                                                 <div className='row '>
-                                                    <div className='col-sm-6 text-start'>
+                                                    <div className='col-sm-6 text-start text-dark'>
                                                         <p>After selecting the movie and session, you need to select the ticket type.
                                                             If you are a student, don't forget to bring your ID card.</p>                        
                                                     </div>
                                                 </div>
 
                                             <div className='row mt-3 px-2 border border-2 align-items-center'>
-                                                <div className='col-sm-6 text-uppercase border-end'>
+                                                <div className='col-sm-6 text-uppercase border-end text-dark'>
                                                     Adult
                                                 </div>
-                                                <div className='col-sm-3 border-end'>
+                                                <div className='col-sm-3 border-end text-dark'>
                                                     Price R25
                                                 </div>
                                                 <div className='col-sm-3'>
@@ -157,7 +157,7 @@ export default function BuyTicketPage() {
                                                                     }>
                                                                         <i class="fa-solid fa-minus"></i></button>
                                                         </div>
-                                                        <div className='col-sm-4'>
+                                                        <div className='col-sm-4 text-dark'>
                                                             {adultTicketNumber}
                                                         </div>
                                                         <div className='col-sm-4 py-2'>
@@ -168,10 +168,10 @@ export default function BuyTicketPage() {
                                                 </div>
                                             </div>
                                             <div className='row mt-1 px-2 border border-2 align-items-center'>
-                                                <div className='col-sm-6 text-uppercase border-end'>
+                                                <div className='col-sm-6 text-uppercase border-end text-dark'>
                                                     Student
                                                 </div>
-                                                <div className='col-sm-3 border-end'>
+                                                <div className='col-sm-3 border-end text-dark'>
                                                     Price R15
                                                 </div>
                                                 <div className='col-sm-3'>
@@ -186,7 +186,7 @@ export default function BuyTicketPage() {
                                                                     <i class="fa-solid fa-minus"></i></button>
                                                                
                                                         </div>
-                                                        <div className='col-sm-4'>
+                                                        <div className='col-sm-4 text-dark'>
                                                             {studentTicketNumber}
                                                         </div>
                                                         <div className='col-sm-4 py-2'>
@@ -197,7 +197,7 @@ export default function BuyTicketPage() {
                                                 </div>
                                             </div>
 
-                                            <p className='lead text-end mt-3 me-5'>Total Amount: <strong>R{(studentTicketNumber * 15.00 + adultTicketNumber * 25.00).toFixed(2)}</strong></p>
+                                            <p className='lead text-end mt-3 me-5 text-dark'>Total Amount: <strong>R{(studentTicketNumber * 15.00 + adultTicketNumber * 25.00).toFixed(2)}</strong></p>
                                         </section>
 
                                     </div>
@@ -209,7 +209,7 @@ export default function BuyTicketPage() {
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                                 <div className='row pt-3 pb-1 px-4 align-items-center'>
-                                        <div className='col-sm-6 text-start'>
+                                        <div className='col-sm-6 text-start text-dark'>
                                             <h3>Select Seat </h3>
                                         </div>
                                         <div className='col-sm-6 mb-2 text-end'>
@@ -246,7 +246,7 @@ export default function BuyTicketPage() {
                                     <div class="accordion-body">
                                     {ticketItem === "placeSection" ? 
                                         <table class="table">
-                                            <tbody>
+                                            <tbody className="text-dark">
                                                 <tr>
                                                     <th scope="row">F</th>
                                                     <td></td>
@@ -323,7 +323,7 @@ export default function BuyTicketPage() {
                                             : null}
                                             {ticketItem === "placeSection" ? (
                                                 <div>
-                                                    <p className='pt-2'>Screen</p>
+                                                    <p className='pt-2 text-dark'>Screen</p>
                                                     <hr style={{height:"4px", color:"black"}}/>
                                                 </div>
                                             )
@@ -337,10 +337,10 @@ export default function BuyTicketPage() {
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                                 <div className='row pt-3 pb-1 px-4 align-items-center'>
-                                        <div className='col-sm-6 text-start'>
+                                        <div className='col-sm-6 text-start text-dark'>
                                             <h3>Payment</h3>
                                         </div>
-                                        <div className='col-sm-6 mb-2 text-end'>
+                                        <div className='col-sm-6 mb-2 text-end text-dark'>
                                             {ticketItem === "paySection" ?
                                                 <h3>Total : R{(studentTicketNumber * 15.00 + adultTicketNumber * 25.00).toFixed(2)}</h3>
                                             : null}
@@ -379,8 +379,8 @@ export default function BuyTicketPage() {
                                                 <label for="email">Email</label>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <KaanKaplanTextInput name="phone" type="tel" pattern="[0]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" class="form-control" id="phone" placeholder="0 5** *** ** **" required/>
-                                                <label for="phone">Phone - 0 5** *** ** **</label>
+                                                <KaanKaplanTextInput name="phone" type="tel" pattern="^0[0-9]{2} [0-9]{3} [0-9]{4}$" class="form-control" id="phone" placeholder="0XX XXX XXXX" required/>
+                                                <label for="phone">Phone - 0XX XXX XXXX</label>
                                             </div>
                                             
                                            
@@ -406,7 +406,7 @@ export default function BuyTicketPage() {
                                                         <label for="floatingSecurityNumber">CCV</label>
                                                     </div>
                                                 </div>
-                                                <p className='text-start'> <input class="form-check-input me-3" type="checkbox" value="" aria-label="Checkbox for following text input" required/>I have read and approve the Preliminary Information Conditions and Distance Sales Agreement.
+                                                <p className='text-start text-dark'> <input class="form-check-input me-3" type="checkbox" value="" aria-label="Checkbox for following text input" required/>I have read and approve the Preliminary Information Conditions and Distance Sales Agreement.
                                             </p>
                                             </div>
                                         </div>

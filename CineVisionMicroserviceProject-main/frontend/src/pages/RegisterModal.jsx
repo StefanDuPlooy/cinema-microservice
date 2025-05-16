@@ -62,8 +62,8 @@ export default function RegisterModal() {
                                 <label for="email">Email</label>
                             </div>
                             <div className="form-floating mb-3">
-                                <KaanKaplanTextInput type="tel" name="phone" className="form-control" id="phone" placeholder='Phone' pattern="[0]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required />
-                                <label for="phone">Phone - 0 5** *** ** **</label>
+                                <KaanKaplanTextInput type="tel" name="phone" className="form-control" id="phone" placeholder='Phone' pattern="^0[0-9]{2} [0-9]{3} [0-9]{4}$" required />
+                                <label for="phone">Phone - 0XX XXX XXXX</label>
                             </div>
                             <div className="form-floating mb-3">
                                 <KaanKaplanTextInput type="password" name="password" className="form-control" id="password" placeholder='Password' required/>
@@ -73,10 +73,10 @@ export default function RegisterModal() {
                                 <KaanKaplanTextInput type="password" name="passwordAgain" className="form-control" id="passwordAgain" placeholder='Confirm Password' required/>
                                 <label for="passwordAgain">Confirm Password</label>
                             </div>
-                            <p className='ps-2 text-start'>
-                                Already a member? 
-                                <a href='!#' id="loginModalLink" style={{color:"black"}}
-                                data-bs-toggle="modal" data-bs-target="#loginModal"> Login </a>
+                            <p className='ps-2 text-start' style={{color: "#000000"}}>
+                                Already a member?
+                                <a href='!#' id="loginModalLink" style={{color:"var(--bs-secondary)", fontWeight: "600", marginLeft: "5px"}}
+                                data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
                             </p>
                         </div>
                         <div class="modal-footer">

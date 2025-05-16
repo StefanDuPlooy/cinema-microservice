@@ -6,6 +6,7 @@ com/kaankaplan/userService/UserServiceApplication.class
 com/kaankaplan/userService/dao/ClaimDao.class
 com/kaankaplan/userService/core/security/config/SecurityConfig.class
 com/kaankaplan/userService/business/concretes/ClaimServiceImpl.class
+com/kaankaplan/userService/config/MongoDbSeedConfig.class
 com/kaankaplan/userService/entity/dto/UserAuthenticationResponseDto$UserAuthenticationResponseDtoBuilder.class
 com/kaankaplan/userService/entity/dto/UserRegisterRequestDto.class
 com/kaankaplan/userService/entity/dto/UserAuthenticationResponseDto.class

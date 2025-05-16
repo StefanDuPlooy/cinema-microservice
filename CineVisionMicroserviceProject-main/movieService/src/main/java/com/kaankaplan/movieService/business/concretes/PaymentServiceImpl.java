@@ -19,7 +19,7 @@ public class PaymentServiceImpl implements PaymentService {
         EmailMessageKafkaDto emailMessage = EmailMessageKafkaDto.builder()
                 .sender("python3.testmail@gmail.com")
                 .recipient(ticketInformationDto.getEmail())
-                .subtitle("CineVision Bilet Detay")
+                .subtitle("Secure Cinema Ticket Details")
                 .fullName(ticketInformationDto.getFullName())
                 .movieName(ticketInformationDto.getMovieName())
                 .movieDay(ticketInformationDto.getMovieDay())

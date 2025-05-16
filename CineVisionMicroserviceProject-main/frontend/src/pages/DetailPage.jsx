@@ -266,7 +266,7 @@ export default function DetailPage() {
                 </div>
                 <div className='container pb-4'>
                     {saloonTimes?.map(time => (
-                        <button className='saloonTime-btn btn btn-outline-dark mx-2 mt-3'
+                        <button className='saloonTime-btn btn btn-outline-light mx-2 mt-3'
                             onClick={() => addState(time.movieBeginTime)}>
                             <strong>{time.movieBeginTime} </strong>
                         </button>
@@ -283,11 +283,11 @@ export default function DetailPage() {
             <div className='container'>
                 <div className='row gy-2 justify-content-start align-items-start'>
                     <div className='col-sm-12 col-md-6 text-start'>
-                       <h3>Yorumlar</h3>
-                       {/* Yorumları listele */}
+                       <h3>Comments</h3>
+                       {/* List Comments */}
                        <div style={{height: "200px", overflow:"scroll",overflowX: "hidden"}}>
                             {comments.length == 0 ? (
-                                <p className='lead mt-4'>İlk Yorumu sen yaz</p>
+                                <p className='lead mt-4'>Be the first to comment</p>
                             ): null}
 
                             {comments.map(comment => (
