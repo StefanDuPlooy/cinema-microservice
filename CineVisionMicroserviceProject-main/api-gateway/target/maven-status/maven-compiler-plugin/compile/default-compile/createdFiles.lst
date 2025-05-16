@@ -1,2 +1,3 @@
-com/kaankaplan/apigateway/ApiGatewayApplication.class
 com/kaankaplan/apigateway/config/SecurityConfig.class
+com/kaankaplan/apigateway/ApiGatewayApplication.class
+com/kaankaplan/apigateway/filter/LoggingFilter.class

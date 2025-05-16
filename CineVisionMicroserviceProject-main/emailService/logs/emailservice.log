@@ -1,0 +1,150 @@
+2025-05-16 13:54:22,774 INFO o.s.b.StartupInfoLogger [main] Starting EmailServiceApplication using Java 17.0.15 on Stefan-PC with PID 36016 (/mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/emailService/target/classes started by stefan in /mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/emailService)
+2025-05-16 13:54:22,778 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.7.0, Spring v5.3.20
+2025-05-16 13:54:22,779 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-05-16 13:54:25,734 INFO o.s.c.c.s.GenericScope [main] BeanFactory id=408126de-203d-3b31-882d-6c83ada8e601
+2025-05-16 13:54:27,574 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 0 (http)
+2025-05-16 13:54:27,601 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-05-16 13:54:27,603 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-05-16 13:54:27,603 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-05-16 13:54:27,811 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-05-16 13:54:27,811 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4970 ms
+2025-05-16 13:54:32,490 INFO o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2025-05-16 13:54:33,358 WARN o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-16 13:54:33,966 INFO o.a.k.c.c.AbstractConfig [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-email-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = email
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-05-16 13:54:34,356 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka version: 3.1.1
+2025-05-16 13:54:34,360 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka commitId: 97671528ba54a138
+2025-05-16 13:54:34,361 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka startTimeMs: 1747396474349
+2025-05-16 13:54:34,371 INFO o.a.k.c.c.KafkaConsumer [main] [Consumer clientId=consumer-email-1, groupId=email] Subscribed to topic(s): email_topics
+2025-05-16 13:54:34,413 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-auto-1"]
+2025-05-16 13:54:34,441 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 35999 (http) with context path ''
+2025-05-16 13:54:34,442 INFO o.s.c.n.e.s.EurekaAutoServiceRegistration [main] Updating port to 35999
+2025-05-16 13:54:34,461 INFO o.s.c.n.e.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2025-05-16 13:54:34,656 INFO c.n.d.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2025-05-16 13:54:34,678 INFO c.n.d.s.r.a.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2025-05-16 13:54:34,795 INFO c.n.d.DiscoveryClient [main] Disable delta property : false
+2025-05-16 13:54:34,796 INFO c.n.d.DiscoveryClient [main] Single vip registry refresh property : null
+2025-05-16 13:54:34,797 INFO c.n.d.DiscoveryClient [main] Force full registry fetch : false
+2025-05-16 13:54:34,798 INFO c.n.d.DiscoveryClient [main] Application is null : false
+2025-05-16 13:54:34,799 INFO c.n.d.DiscoveryClient [main] Registered Applications size is zero : true
+2025-05-16 13:54:34,799 INFO c.n.d.DiscoveryClient [main] Application version is -1: true
+2025-05-16 13:54:34,800 INFO c.n.d.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2025-05-16 13:54:35,292 INFO o.a.k.c.Metadata [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-email-1, groupId=email] Resetting the last seen epoch of partition email_topics-0 to 0 since the associated topicId changed from null to Eg-yAuqGShekYyHcq-FnlQ
+2025-05-16 13:54:35,294 INFO o.a.k.c.Metadata [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-email-1, groupId=email] Cluster ID: tKWzLmw6Qj2V0-OJtJQ6pw
+2025-05-16 13:54:35,296 INFO o.a.k.c.c.i.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-email-1, groupId=email] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+2025-05-16 13:54:35,299 INFO o.a.k.c.c.i.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-email-1, groupId=email] (Re-)joining group
+2025-05-16 13:54:35,320 INFO o.a.k.c.c.i.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-email-1, groupId=email] Request joining group due to: need to re-join with the given member-id
+2025-05-16 13:54:35,321 INFO o.a.k.c.c.i.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-email-1, groupId=email] (Re-)joining group
+2025-05-16 13:54:35,331 INFO o.a.k.c.c.i.AbstractCoordinator$JoinGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-email-1, groupId=email] Successfully joined group with generation Generation{generationId=3, memberId='consumer-email-1-78d0901e-f4ed-48a6-88da-6ea197be70d7', protocol='range'}
+2025-05-16 13:54:35,337 INFO o.a.k.c.c.i.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-email-1, groupId=email] Finished assignment for group at generation 3: {consumer-email-1-78d0901e-f4ed-48a6-88da-6ea197be70d7=Assignment(partitions=[email_topics-0])}
+2025-05-16 13:54:35,354 INFO o.a.k.c.c.i.AbstractCoordinator$SyncGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-email-1, groupId=email] Successfully synced group in generation Generation{generationId=3, memberId='consumer-email-1-78d0901e-f4ed-48a6-88da-6ea197be70d7', protocol='range'}
+2025-05-16 13:54:35,355 INFO o.a.k.c.c.i.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-email-1, groupId=email] Notifying assignor about the new Assignment(partitions=[email_topics-0])
+2025-05-16 13:54:35,362 INFO o.a.k.c.c.i.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-email-1, groupId=email] Adding newly assigned partitions: email_topics-0
+2025-05-16 13:54:35,380 INFO o.a.k.c.c.i.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-email-1, groupId=email] Setting offset for partition email_topics-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1001 rack: null)], epoch=0}}
+2025-05-16 13:54:35,381 INFO o.s.c.l.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] email: partitions assigned: [email_topics-0]
+2025-05-16 13:54:36,255 INFO c.n.d.DiscoveryClient [main] The response status is 200
+2025-05-16 13:54:36,265 INFO c.n.d.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2025-05-16 13:54:36,276 INFO c.n.d.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-16 13:54:36,289 INFO c.n.d.DiscoveryClient [main] Discovery Client initialized at timestamp 1747396476289 with initial instances count: 1
+2025-05-16 13:54:36,304 INFO o.s.c.n.e.s.EurekaServiceRegistry [main] Registering application EMAILSERVICE with eureka with status UP
+2025-05-16 13:54:36,308 INFO c.n.d.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1747396476308, current=UP, previous=STARTING]
+2025-05-16 13:54:36,317 INFO c.n.d.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAILSERVICE/10.255.255.254:emailService:0: registering service...
+2025-05-16 13:54:36,348 INFO o.s.b.StartupInfoLogger [main] Started EmailServiceApplication in 15.219 seconds (JVM running for 15.922)
+2025-05-16 13:54:36,547 INFO c.n.d.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAILSERVICE/10.255.255.254:emailService:0 - registration status: 204
+2025-05-16 13:59:35,967 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2025-05-16 14:03:37,806 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-email-1, groupId=email] Node -1 disconnected.
+2025-05-16 14:04:37,147 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2025-05-16 14:09:38,326 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2025-05-16 14:14:39,533 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2025-05-16 14:19:40,749 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration

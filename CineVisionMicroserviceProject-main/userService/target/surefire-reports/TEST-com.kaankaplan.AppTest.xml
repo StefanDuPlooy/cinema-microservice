@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.kaankaplan.AppTest" time="0.005" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="com.kaankaplan.AppTest" time="0.003" errors="0" skipped="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17.0.15+6-Ubuntu-0ubuntu124.04"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/api-gateway"/>
+    <property name="maven.multiModuleProjectDirectory" value="/mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/userService"/>
     <property name="java.vm.vendor" value="Ubuntu"/>
     <property name="java.vendor.url" value="https://ubuntu.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -40,7 +40,7 @@
     <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -f api-gateway/pom.xml"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -f userService/pom.xml"/>
     <property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -58,5 +58,5 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.stdout.encoding" value="UTF-8"/>
   </properties>
-  <testcase classname="com.kaankaplan.AppTest" name="shouldAnswerWithTrue" time="0.005"/>
+  <testcase classname="com.kaankaplan.AppTest" name="shouldAnswerWithTrue" time="0.003"/>
 </testsuite>

@@ -64,6 +64,12 @@ mvn spring-boot:run -f emailService/pom.xml
 mvn spring-boot:run -f api-gateway/pom.xml
 ```
 
+Alternatively, use the provided startup script to launch all services in separate terminals:
+```
+cd CineVisionMicroserviceProject-main
+./start-services.sh
+```
+
 ### Frontend
 Install dependencies:
 ```
@@ -106,6 +112,16 @@ The microservices communicate through:
 - **Synchronous**: REST API calls via WebClient
 - **Asynchronous**: Event-driven messaging with Apache Kafka
 
+## Logging and Monitoring
+
+The application uses centralized logging with the following components:
+- **Logback**: Configured via `logback-spring.xml` files in each service
+- **Console Appender**: Colored logs for development
+- **Rolling File Appender**: Log files stored in `./logs` directory
+- **Distributed Tracing**: TraceID and SpanID visible in logs
+- **API Gateway Logging**: Centralized request/response logging in the API Gateway via `LoggingFilter`
+- **Log Levels**: INFO for most operations, DEBUG for Gateway routes, TRACE for application-specific details
+
 ## Important Configuration
 
 - Eureka Server: http://localhost:8761 (username: eureka, password: password)
@@ -129,6 +145,7 @@ Before running the Email Service, update the email configuration in `emailServic
 - WebClient (WebFlux)
 - Resilience4j (Circuit Breaker)
 - Zipkin and Sleuth (distributed tracing)
+- Logback for centralized logging
 
 ### Frontend
 - React

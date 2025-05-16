@@ -36,6 +36,16 @@ public class UserServiceImpl implements UserService {
     public void addUser(UserRegisterRequestDto userRegisterRequestDto) {
 
         Claim claim = claimService.getClaimByClaimName("CUSTOMER");
+        
+        // If CUSTOMER claim doesn't exist, fallback to USER claim
+        if (claim == null) {
+            claim = claimService.getClaimByClaimName("USER");
+        }
+        
+        // Log a warning if no claim is found
+        if (claim == null) {
+            System.err.println("WARNING: No claim found for new user registration! User will have null claim.");
+        }
 
         User user = User.builder()
                         .email(userRegisterRequestDto.getEmail())

@@ -42,8 +42,17 @@ public class LoggingFilter implements GlobalFilter {
         URI requestUrl = exchange.getAttribute(GATEWAY_REQUEST_URL_ATTR);
         ServerHttpRequest request = exchange.getRequest();
         
-        String traceId = tracer.currentSpan().context().traceId();
-        String spanId = tracer.currentSpan().context().spanId();
+        // Safe retrieval of trace and span IDs with null checks
+        final String traceId;
+        final String spanId;
+        
+        if (tracer.currentSpan() != null) {
+            traceId = tracer.currentSpan().context().traceId();
+            spanId = tracer.currentSpan().context().spanId();
+        } else {
+            traceId = "unknown";
+            spanId = "unknown";
+        }
         
         logger.info(
             "Request: [TraceID: {}, SpanID: {}] {} {} route: {}, to URI: {}, Headers: {}",
@@ -56,7 +65,7 @@ public class LoggingFilter implements GlobalFilter {
             request.getHeaders()
         );
         
-        long startTime = System.currentTimeMillis();
+        final long startTime = System.currentTimeMillis();
         
         return chain.filter(exchange).then(Mono.fromRunnable(() -> {
             long duration = System.currentTimeMillis() - startTime;
