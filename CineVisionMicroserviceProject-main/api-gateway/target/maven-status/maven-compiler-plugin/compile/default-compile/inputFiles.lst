@@ -1,3 +1,6 @@
 /mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/api-gateway/src/main/java/com/kaankaplan/apigateway/filter/LoggingFilter.java
+/mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/api-gateway/src/main/java/com/kaankaplan/apigateway/filter/RateLimiterFilter.java
+/mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/api-gateway/src/main/java/com/kaankaplan/apigateway/config/RateLimiterConfig.java
+/mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/api-gateway/src/main/java/com/kaankaplan/apigateway/exception/RateLimitExceededHandler.java
 /mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/api-gateway/src/main/java/com/kaankaplan/apigateway/config/SecurityConfig.java
 /mnt/c/Users/stefa.STEFAN/OneDrive/Documents/cinema-microservice/CineVisionMicroserviceProject-main/api-gateway/src/main/java/com/kaankaplan/apigateway/ApiGatewayApplication.java
