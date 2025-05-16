@@ -6,6 +6,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+
 @RestController
 @RequestMapping("/api/user/users/")
 @RequiredArgsConstructor
@@ -18,7 +20,7 @@ public class UserController {
     }
 
     @PostMapping("add")
-    public void addUser(@RequestBody UserRegisterRequestDto userRegisterRequestDto) {
+    public void addUser(@Valid @RequestBody UserRegisterRequestDto userRegisterRequestDto) {
         userService.addUser(userRegisterRequestDto);
     }
 

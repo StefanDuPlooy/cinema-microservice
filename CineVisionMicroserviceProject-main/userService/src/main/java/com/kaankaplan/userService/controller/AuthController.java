@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
+
 @RestController
 @RequestMapping("/api/user/auth")
 @RequiredArgsConstructor
@@ -20,7 +22,7 @@ public class AuthController {
     private final AuthService authService;
 
     @PostMapping("/login")
-    public UserAuthenticationResponseDto login(@RequestBody UserLoginRequestDto userLoginRequestDto) {
+    public UserAuthenticationResponseDto login(@Valid @RequestBody UserLoginRequestDto userLoginRequestDto) {
         logger.info("Login attempt for email: {}", userLoginRequestDto.getEmail());
         try {
             UserAuthenticationResponseDto response = authService.login(userLoginRequestDto);

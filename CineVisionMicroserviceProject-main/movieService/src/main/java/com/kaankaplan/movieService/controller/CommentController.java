@@ -9,6 +9,8 @@ import io.github.resilience4j.retry.annotation.Retry;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+
 import java.util.List;
 
 @RestController
@@ -32,7 +34,7 @@ public class CommentController {
     @PostMapping("add")
     @CircuitBreaker(name = "comment", fallbackMethod = "fallback")
     @Retry(name="comment")
-    public Comment addComment(@RequestBody CommentRequestDto comment) {
+    public Comment addComment(@Valid @RequestBody CommentRequestDto comment) {
         return commentService.addComment(comment);
     }
 
@@ -40,7 +42,7 @@ public class CommentController {
     public void deleteComment(@RequestBody DeleteCommentRequestDto deleteCommentRequestDto) {
         commentService.deleteComment(deleteCommentRequestDto);
     }
-    private Comment fallback(CommentRequestDto commentRequestDto, RuntimeException runtimeException) throws RuntimeException{
+    private Comment fallback(@Valid CommentRequestDto commentRequestDto, RuntimeException runtimeException) throws RuntimeException{
         return null;
     }
 

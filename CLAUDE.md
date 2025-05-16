@@ -134,6 +134,7 @@ Before running the Email Service, update the email configuration in `emailServic
 - Spring Boot 2.7.0
 - Spring Cloud (Eureka, Gateway)
 - Spring Security with JWT
+- Bean Validation (JSR-380) for input validation
 - PostgreSQL, MongoDB, Redis
 - Apache Kafka
 - WebClient (WebFlux)
@@ -146,6 +147,7 @@ Before running the Email Service, update the email configuration in `emailServic
 - Redux
 - Bootstrap
 - Axios
+- HTML5 form validation
 
 ## Authentication and Users
 
@@ -162,6 +164,35 @@ Before running the Email Service, update the email configuration in `emailServic
 
 ### Phone Number Format
 The application validates South African phone numbers in the format: `0XX XXX XXXX`
+
+## Input Validation
+
+### Backend Validation
+The application implements backend validation using Bean Validation (JSR-380):
+
+1. **UserService DTO Validation**:
+   - `UserRegisterRequestDto`: Validates name length, email format, phone number pattern, and password requirements
+   - `UserLoginRequestDto`: Ensures email format and password presence
+
+2. **MovieService DTO Validation**:
+   - `CommentRequestDto`: Validates required fields and comment text length
+   - `MovieRequestDto`: Validates movie details including name, description length, and required relationships
+
+3. **Validation Error Handling**:
+   - Custom `ValidationExceptionHandler` returns field-specific validation errors
+   - Returns HTTP 400 Bad Request responses with detailed error messages
+
+### Frontend Validation
+The application implements client-side validation:
+
+1. **HTML5 Validation Attributes**:
+   - Required fields: Prevents form submission with empty required fields
+   - Pattern validation: Validates phone numbers using regex pattern
+   - Type validation: Uses input type="email" for email validation
+
+2. **Form Submission Validation**:
+   - Password matching validation in registration form
+   - Client-side data validation before API requests
 
 ## Database Seeding
 

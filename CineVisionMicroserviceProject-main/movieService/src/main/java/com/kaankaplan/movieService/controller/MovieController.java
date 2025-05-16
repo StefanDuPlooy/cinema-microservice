@@ -9,6 +9,8 @@ import io.github.resilience4j.retry.annotation.Retry;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+
 import java.util.List;
 
 @RestController
@@ -36,11 +38,11 @@ public class MovieController {
     @PostMapping("add")
     @CircuitBreaker(name="movie", fallbackMethod = "fallback")
     @Retry(name="movie")
-    public Movie addMovie(@RequestBody MovieRequestDto movieRequestDto) {
+    public Movie addMovie(@Valid @RequestBody MovieRequestDto movieRequestDto) {
         return movieService.addMovie(movieRequestDto);
     }
 
-    private Movie fallback(MovieRequestDto movieRequestDto, RuntimeException runtimeException) throws RuntimeException {
+    private Movie fallback(@Valid MovieRequestDto movieRequestDto, RuntimeException runtimeException) throws RuntimeException {
         return null;
     }
 
