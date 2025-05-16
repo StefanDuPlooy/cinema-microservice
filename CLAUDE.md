@@ -64,12 +64,6 @@ mvn spring-boot:run -f emailService/pom.xml
 mvn spring-boot:run -f api-gateway/pom.xml
 ```
 
-Alternatively, use the provided startup script to launch all services in separate terminals:
-```
-cd CineVisionMicroserviceProject-main
-./start-services.sh
-```
-
 ### Frontend
 Install dependencies:
 ```
