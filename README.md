@@ -247,6 +247,7 @@ The API Gateway includes rate limiting to protect against DDoS attacks:
 - User accounts with credentials and profile data
 - Role-based permissions (ADMIN and USER roles)
 
+Helped set up initial base micro service: https://github.com/VonHumbolt/CineVisionMicroserviceProject.git
 </details>
 
 ## License
